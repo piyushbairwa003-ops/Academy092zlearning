@@ -192,20 +192,20 @@
 
   <script>
     // Countdown + auto redirect
-    let countdown = 5;
-    const redirectUrl = document.getElementById("joinBtn").href;
+   // let countdown = 5;
+   // const redirectUrl = document.getElementById("joinBtn").href;
     const countdownEl = document.getElementById("countdown");
 
-    const timerInterval = setInterval(() => {
+    //const timerInterval = setInterval(() => {
       countdown--;
       if (countdown <= 0) {
         clearInterval(timerInterval);
         countdownEl.innerText = "0";
         window.location.href = redirectUrl;
-      } else {
-        countdownEl.innerText = countdown;
+     // } else {
+       // countdownEl.innerText = countdown;
       }
-    }, 1000);
+  //  }, 1000);
   </script>
 
 <!-- Meta Pixel Code -->
